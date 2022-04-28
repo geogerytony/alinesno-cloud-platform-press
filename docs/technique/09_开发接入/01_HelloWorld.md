@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>com.alinesno.cloud</groupId>
 			<artifactId>alinesno-cloud-dependencies</artifactId>
-			<version>2.1.0-SNAPSHOT</version>
+			<version>2.1.2-RC</version>
 			<type>pom</type>
 			<scope>import</scope>
 		</dependency>
@@ -45,7 +45,7 @@
 
 ```java
 @SpringBootApplication(exclude = DruidDataSourceAutoConfigure.class)
-@EnableLogin
+@EnableSSO
 public class AalinesnoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AalinesnoApplication.class, args);
